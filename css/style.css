@@ -1,0 +1,145 @@
+/* 
+    css variables for navbar link color, color on hover, and normal link color
+    on hover
+*/
+:root {
+  --nav-link-color: #363636;
+  --nav-link-color-hover: #000;
+  --main-link-color: #41adff;
+  --main-link-color-hover: #005ca3;
+  --fg-color: black;
+}
+
+/* corresponding colors for dark colorscheme */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --nav-link-color: rgb(235, 235, 235);
+    --nav-link-color-hover: #fff;
+    --main-link-color: #d1342fff;
+    --main-link-color-hover: rgb(238, 51, 44);
+    --fg-color: rgb(66, 66, 66);
+    --background-body: rgb(30, 30, 30);
+    --background: rgb(20, 20, 20);
+    --background-alt: rgb(25, 25, 25);
+    --text-muted: #b5b5b5;
+  }
+}
+
+/* set the font family */
+body,
+p,
+a,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "SF Pro Text", -apple-system, BlinkMacSystemFont, "Segoe UI Variable", "Segoe UI",
+    Roboto, "Liberation Sans", FreeSans, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+li:not(:last-child) {
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+/* info, success, warning, and error box styles */
+.info,
+.success,
+.warning,
+.error {
+  border: 1px solid transparent;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+}
+
+.info {
+  background: #bde5f8;
+  color: #00529b;
+  border-color: #00529b;
+}
+
+.success {
+  color: #4f8a10;
+  background-color: #dff2bf;
+  border-color: #4f8a10;
+}
+
+.warning {
+  color: #9f6000;
+  background-color: #feefb3;
+  border-color: #9f6000;
+}
+
+.error {
+  color: #99030a;
+  background-color: #ffbaba;
+  border-color: #99030a;
+}
+
+.info>a {
+  color: blue;
+}
+
+.info>a,
+.success>a,
+.warning>a,
+.error>a {
+  text-decoration: underline;
+}
+
+/* redacted class */
+.redacted,
+.redacted>a,
+.redacted>a:hover {
+  background: var(--fg-color);
+  color: var(--fg-color);
+  text-decoration: none;
+}
+
+a {
+  color: var(--main-link-color);
+}
+
+/* make sure we have nice transitions */
+a:hover {
+  color: var(--main-link-color-hover);
+  transition: all 0.2s ease-in-out;
+}
+
+/* change the thickness of the hr tag */
+nav#links>hr {
+  height: 0px;
+  border: none;
+  border-top: 3px solid;
+}
+
+/* navbar link styles */
+nav#links>a {
+  margin: 0.5rem;
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+/* navbar full name text styles */
+nav#links>h3#fullName {
+  display: inline;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+}
+
+/* handle link color and text decoration for navbar */
+nav#links>h3#fullName>a,
+nav#links>a {
+  color: var(--nav-link-color);
+  text-decoration: none;
+}
+
+/* change color & add underline on hover */
+nav#links>a:hover,
+nav#links>h3#fullName>a:hover {
+  color: var(--nav-link-color-hover);
+  text-decoration: underline;
+}

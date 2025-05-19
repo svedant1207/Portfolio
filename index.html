@@ -1,0 +1,96 @@
+<!--
+  inspired by emersion: https://emersion.fr/,
+  mark otto: https://markdotto.com & https://mdo.fm
+  seirdy: https://seirdy.one/,
+  jethro kuan: https://jethro.dev
+-->
+
+<!DOCTYPE html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Vedant Soni</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <meta name="theme-color" content="#fafafa" />
+
+    <style>
+        /* Center everything */
+        main#content {
+            text-align: center;
+            width: 100%;
+            min-height: 80vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #content h1 {
+            font-size: 2.5em;
+            margin: 0;
+            margin-bottom: 0.2em;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- hello, universe! -->
+    <main id="content">
+        <h1 id="fullName">Vedant Soni</h1>
+        <nav id="links">
+            <a id="about" href="">Me</a>
+            <a id="resume" href="https://drive.google.com/file/d/1T0p44VyqFkU8-aBtXKKjrRbaBxSiTpzb/view?usp=sharing" target="_blank">Resume</a>
+            <a id="github" href="https://github.com/svedant1207" target="_blank">Github</a>
+            <a id="linkedin" href="https://www.linkedin.com/in/vedant-soni-504568249/" target="_blank">LinkedIn</a>
+            <hr />
+        </nav>
+    </main>
+
+    <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        // https://stackoverflow.com/a/32445401
+        $(function () {
+            count = 0;
+            wordsArray = [
+                "বেদান্ত সনি",
+                "ਵੇਦਾਂਤ ਸੋਨੀ",
+                "वेदांत सोनी",
+                "فيدانت سوني",
+                "Vedant Soni"
+            ];
+            setInterval(function () {
+                count++;
+                $("#fullName").fadeOut(400, function () {
+                    $(this)
+                        .text(wordsArray[count % wordsArray.length])
+                        .fadeIn(400);
+                });
+            }, 2000);
+            $("#fullName").mouseover(function () {
+                $("#fullName").fadeOut(400, function () {
+                    $("#fullName").text("Vedant Soni").fadeIn(400);
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
