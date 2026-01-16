@@ -36,8 +36,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "SF Pro Text", -apple-system, BlinkMacSystemFont, "Segoe UI Variable", "Segoe UI",
-    Roboto, "Liberation Sans", FreeSans, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-family: "Chakra Petch", serif, "Apple Color Emoji", "Segoe UI Emoji";
 }
 
 li:not(:last-child) {
@@ -142,4 +141,90 @@ nav#links>a:hover,
 nav#links>h3#fullName>a:hover {
   color: var(--nav-link-color-hover);
   text-decoration: underline;
+}
+
+/* Timeline Styles */
+.timeline {
+  position: relative;
+  padding-left: 25px;
+  border-left: 2px solid var(--text-muted, #ccc);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 2.5rem;
+}
+
+.timeline-marker {
+  position: absolute;
+  left: -32px;
+  top: 6px;
+  width: 12px;
+  height: 12px;
+  background-color: var(--main-link-color);
+  border: 2px solid var(--background-body, white);
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px var(--main-link-color);
+}
+
+.timeline-content {
+  background: transparent;
+}
+
+.job-header {
+  margin-bottom: 0.5rem;
+}
+
+.job-header h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.job-header .location {
+  font-size: 0.9rem;
+  color: #ccc;
+  font-weight: normal;
+  margin-left: 0.5rem;
+}
+
+.job-meta {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 0.2rem;
+  font-size: 0.95rem;
+  color: #fff;
+}
+
+.job-meta .role {
+  font-weight: 500;
+}
+
+.job-meta .date {
+  color: #ccc;
+  font-style: italic;
+}
+
+.timeline-content ul {
+  margin: 0.5rem 0 0 1rem;
+  padding: 0;
+}
+
+.timeline-content li {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 0.4rem;
+  color: #fff;
+}
+
+@media (max-width: 600px) {
+  .job-meta {
+    flex-direction: column;
+  }
+
+  .job-meta .date {
+    margin-top: 0.2rem;
+  }
 }

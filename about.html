@@ -1,16 +1,15 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<html class="no-js" lang="">
 
 <head>
     <meta charset="utf-8" />
-    <title>Vedant Soni</title>
-    <meta name="description" content="Portfolio of Vedant Soni" />
+    <title>Vedant Soni | About</title>
+    <link rel="icon" href="data:,">
+    <meta name="description" content="Experience and About Vedant Soni" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <meta property="og:title" content="Vedant Soni Portfolio" />
+    <meta property="og:title" content="Vedant Soni | About" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://github.com/svedant1207/Portfolio" />
-    <meta property="og:image" content="images/profile.png" />
 
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/main.css" />
@@ -19,131 +18,194 @@
 
     <meta name="theme-color" content="#fafafa" />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+
     <style>
-        header > hr {
-            margin-top: 0.5rem;
+        /* Shared styles from index.html for consistency */
+        main#content {
+            text-align: center;
+            width: 100%;
+            min-height: 80vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* justification removed to allow top-aligned flow for content */
+            padding-top: 2rem;
         }
 
-        p#tagline {
-            font-size: 1.25rem;
-            margin-bottom: 2rem;
+        #content h1 {
+            font-size: 2.5em;
+            margin: 0;
+            margin-bottom: 0.2em;
         }
 
-        ul {
-            margin-top: 0;
+        /* Specific to About page */
+        .timeline-container {
+            width: 100%;
+            max-width: 800px;
+            margin-top: 2rem;
+            text-align: left;
+            padding: 0 1rem;
         }
     </style>
 </head>
 
 <body>
-    <section>
+    <main id="content">
+        <!-- Name links to Home -->
+        <h1 id="fullName"><a href="index.html" style="text-decoration:none; color:inherit;">Vedant Soni</a></h1>
+
         <nav id="links">
-            <h3 id="fullName">
-                <a href="https://github.com/svedant1207">Vedant Soni</a>
-            </h3>
-            <a id="about" href="#about">Me</a>
-            <a id="resume" href="https://drive.google.com/drive/folders/1Plf8Llc1BPXgPKZRxaT5pZQtAHwJv2EB?usp=sharing" target="_blank">Resume</a>
+            <a href="about.html" class="active">Me</a>
+            <a id="resume" href="https://drive.google.com/drive/folders/1Plf8Llc1BPXgPKZRxaT5pZQtAHwJv2EB?usp=sharing"
+                target="_blank">Resume</a>
             <a id="github" href="https://github.com/svedant1207" target="_blank">Github</a>
             <a id="linkedin" href="https://www.linkedin.com/in/vedant-soni-504568249/" target="_blank">LinkedIn</a>
             <hr />
         </nav>
 
-        <header>
-            <h1>About</h1>
-        </header>
-
-        <article>
-            <section id="about">
-                <section id="bio">
-                    <p id="tagline">
-                        Hey there! I’m Vedant Soni, a B.Tech Computer Science student at Medicaps University with a CGPA of 7.5. 
-                        I enjoy blending logic with creativity—whether I’m debugging late-night Python scripts, designing responsive UIs in React, 
-                        or training machine learning models to make smart predictions.
-
-                        <br><br> I've interned at <strong>Lise Infotech</strong> as a Web Developer, where I built responsive front-end interfaces using HTML, CSS, JavaScript, and integrated Python-Flask REST APIs to streamline backend functionality. 
-                        I also completed a virtual internship with <strong>Goldman Sachs</strong>, where I supported backend services and optimized SQL databases for scalable systems.
-
-                        <br><br> Some of my proudest work includes creating ML models like spam email classifiers and F1 race prediction systems, where I combined scikit-learn, pandas, and regression models to solve real problems. 
-                        I also love building web projects like <strong>Rentomatic</strong>—a dynamic property pricing tool powered by React and Python.
-
-                        <br><br> On campus, I’m actively involved as Secretary of the ACM chapter, where I help run events and manage communications to boost tech engagement. 
-                        I’ve also earned certifications from Google and Walmart that sharpened my understanding of Python, Java, and system design.
-
-                        <br><br> Off-screen, I’m a cricket enthusiast, amateur chess champion (among friends), and a strong believer that pineapple doesn't belong on pizza.
-
-                        <br><br> I'm exploring where tech can take me—maybe backend systems, maybe scalable AI—but whatever it is, I’ll keep building and learning along the way.
-                    </p>
-                </section>
-            </section>
-
-            <section id="contact">
-                <h2>Contact</h2>
-                <p>The best way to contact me is through email: <a href="mailto:vedantsoni1207@gmail.com">vedantsoni1207@gmail.com</a></p>
-            </section>
-
-            <section id="projects">
-                <h2>Projects</h2>
-                <ul>
-                    <li><strong><u>Rentomatic Property Management</u></strong> – <i>React, HTML, CSS, JavaScript, Python</i>
-                        <ul>
-                            <li>Created a dynamic property pricing platform with React and Flask backend.</li>
-                            <li>Designed frontend in Figma, ensuring mobile responsiveness and user-focused UI.</li>
-                            <li>Integrated real-time pricing data and backend APIs for seamless interaction.</li>
-                        </ul>
-                    </li>
-
-                    <li><strong><u>Spam Email Detection</u></strong> – <i>Python, NLP, Scikit-learn</i>
-                        <ul>
-                            <li>Built a classifier using Naive Bayes and Logistic Regression.</li>
-                            <li>Implemented tokenization, TF-IDF vectorization, and evaluated using precision and recall.</li>
-                        </ul>
-                    </li>
-
-                    <li><strong><u>F1 Score Prediction</u></strong> – <i>Python, Logistic Regression, Random Forest</i>
-                        <ul>
-                            <li>Predicted race outcomes using driver stats, weather, and track data.</li>
-                            <li>Improved model accuracy by engineering meaningful features and reducing RMSE.</li>
-                        </ul>
-                    </li>
-
-                    <li><strong><u>House Price Prediction</u></strong> – <i>Python, Linear Regression</i>
-                        <ul>
-                            <li>Designed a model to predict house prices based on location, area, and features.</li>
-                            <li>Used encoding and feature scaling techniques to optimize performance.</li>
-                        </ul>
-                    </li>
-
-                    <li><strong><u>Portfolio Website</u></strong> – <i>HTML, CSS, JavaScript</i>
-                        <ul>
-                            <li>Developed a clean, responsive portfolio to showcase my work and skills.</li>
-                            <li>Used Flexbox/Grid for layout and added interactive animations.</li>
-                        </ul>
-                    </li>
-
-                    <li><strong><u>Weather Anytime</u></strong> – <i>Python, PyQt5, OpenWeather API</i>
-                        <ul>
-                            <li>Created a desktop app with live weather updates based on user location.</li>
-                            <li>Used emoji-based dynamic UI and strong error handling for better UX.</li>
-                        </ul>
-                    </li>
-                </ul>
-            </section>
-
-            <footer>
-                <p>
-                    The content of this site is licensed under
-                    <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a>. The
-                    <a href="https://github.com/svedant1207/Portfolio">code for this website</a>
-                    is licensed under
-                    <a href="https://choosealicense.com/licenses/agpl-3.0/">AGPLv3</a>.
+        <!-- Bio Section -->
+        <div class="bio-container"
+            style="max-width: 800px; padding: 0 1rem; margin-top: 1rem; margin-bottom: 2rem; text-align: left; color: white;">
+            <h1>Hi!</h1>
+            <h3>
+                <p>I’m Vedant Soni, a Computer Science undergraduate who enjoys turning ideas into reliable, scalable
+                    software.</p>
+                <p>I’ve had hands-on experience across software development, web development, and machine learning,
+                    working
+                    with teams in both industry and academic environments. From building secure backend systems with
+                    Flask
+                    and SQLAlchemy to developing machine learning–based decision support tools and responsive web
+                    applications, I enjoy working at the intersection of logic, design, and real-world problem solving.
                 </p>
-            </footer>
-        </article>
-    </section>
+                <p>What excites me most is building things that are clean, efficient, and actually useful. I like
+                    writing
+                    code that’s easy to understand, improving existing systems, and learning new technologies when a
+                    problem
+                    demands it. I’m especially interested in backend development, AI-driven applications, and
+                    well-architected software systems.</p>
+                <p>Outside of coding, I’ve also been actively involved in campus organizations, where I’ve learned the
+                    value
+                    of communication, teamwork, and responsibility—skills that matter just as much as technical ability.
+                </p>
+                <p>I’m always curious, always learning, and always up for a challenge 🚀</p>
+            </h3>
+        </div>
+
+        <div class="timeline-container">
+            <h2 style="text-align: left; margin-bottom: 1.5rem; color: white;">Experience</h2>
+            <div class="timeline">
+
+                <!-- Experience 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="job-header">
+                            <h3>Mapit.ai <span class="location">Remote, India</span></h3>
+                            <div class="job-meta">
+                                <span class="role">Software Development Intern</span>
+                                <span class="date">Jul 2025 – Aug 2025</span>
+                            </div>
+                        </div>
+                        <ul>
+                            <li>Engineered a robust user registration system using Flask-SQL Alchemy, enabling secure
+                                account creation and dynamic managing user state to support scalable user onboarding in
+                                AI-driven analytics tools.</li>
+                            <li>Implemented detailed success/failure tracking in the registration flow, improving system
+                                reliability and facilitating real-time diagnostics for user authentication pipelines.
+                            </li>
+                            <li>Designed and optimized existing database models and schemas, enhancing data consistency
+                                and performance while laying a solid foundation for seamless integration.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Experience 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="job-header">
+                            <h3>IIT Varanasi (BHU) <span class="location">Varanasi, UP</span></h3>
+                            <div class="job-meta">
+                                <span class="role">Machine Learning Engineering Intern</span>
+                                <span class="date">Jun 2025 – Jul 2025</span>
+                            </div>
+                        </div>
+                        <ul>
+                            <li>Built a Python-based decision support system using fuzzy logic (NumPy, Pandas,
+                                Scikit-fuzzy) to evaluate and rank 17 green logistics sustainability strategies.</li>
+                            <li>Enhanced the accuracy of fuzzy DEMATEL, FUCOM, and SWARA analyses by performing
+                                comprehensive data preprocessing, including expert input wrangling, normalization, and
+                                consistency checks.</li>
+                            <li>Improved interpretability and responsiveness via feature weighting and sensitivity
+                                analysis, boosting alignment with expert consensus by 20% and enabling actionable
+                                strategy prioritization.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Experience 3 -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="job-header">
+                            <h3>Lise Infotech <span class="location">Indore, MP</span></h3>
+                            <div class="job-meta">
+                                <span class="role">Web Development Intern</span>
+                                <span class="date">Jul 2024 – Aug 2024</span>
+                            </div>
+                        </div>
+                        <ul>
+                            <li>Developed responsive front-end interfaces using HTML5, CSS3(Bootstrap), and React.js,
+                                ensuring cross-browser compatibility and accessibility.</li>
+                            <li>Built a REST API, enhancing backend functionality by efficiently interfacing with
+                                databases to fetch and manipulate data, leading to more seamless user interactions.</li>
+                            <li>Enhanced user interactions and performance by implementing front-end functionalities,
+                                guided by modern UX/UI principles.</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
 
     <script src="js/vendor/modernizr-3.11.2.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        // https://stackoverflow.com/a/32445401
+        $(function () {
+            count = 0;
+            wordsArray = [
+                "বেদান্ত সনি",
+                "ਵੇਦਾਂਤ ਸੋਨੀ",
+                "वेदांत सोनी",
+                "فيدانت سوني",
+                "Vedant Soni"
+            ];
+            setInterval(function () {
+                count++;
+                $("#fullName > a").fadeOut(400, function () {
+                    $(this)
+                        .text(wordsArray[count % wordsArray.length])
+                        .fadeIn(400);
+                });
+            }, 2000);
+            $("#fullName > a").mouseover(function () {
+                $("#fullName > a").fadeOut(400, function () {
+                    $("#fullName > a").text("Vedant Soni").fadeIn(400);
+                });
+            });
+        });
+    </script>
 </body>
 
 </html>
